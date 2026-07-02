@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" 
+minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" 
+xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ListasController">
+   <children>
+      <Pane prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #3B82F6;">
+         <children>
+            <Label layoutX="31.0" layoutY="5.0" text="UTNG" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="btnRegistroUsuarios" layoutX="33.0" layoutY="75.0" mnemonicParsing="false" onAction="#irARegistroUsuarios" text="Registro Usuarios" />
+      <Button fx:id="btnRegistroBibliotecario" layoutX="164.0" layoutY="75.0" mnemonicParsing="false" onAction="#irARegistroBibliotecario" text="Registro Bibliotecario" />
+      <Button fx:id="btnLista" layoutX="320.0" layoutY="75.0" mnemonicParsing="false" onAction="#irALista" text="Lista Usuarios y Bibliotecarios" />
+      <TableView fx:id="tblPersonas" layoutX="36.0" layoutY="124.0" prefHeight="200.0" prefWidth="528.0">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre/s" />
+          <TableColumn fx:id="colApellidoP" prefWidth="75.0" text="Apellido P" />
+          <TableColumn fx:id="colApellidoM" prefWidth="75.0" text="Apellido M" />
+          <TableColumn fx:id="colTelefono" prefWidth="75.0" text="Telefono" />
+          <TableColumn fx:id="colCorreo" prefWidth="75.0" text="Correo" />
+          <TableColumn fx:id="colArea" prefWidth="75.0" text="Área" />
+          <TableColumn fx:id="colGrupo" prefWidth="75.0" text="Grupo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnConfirmar" layoutX="287.0" layoutY="342.0" mnemonicParsing="false" onAction="#confirmarSeleccion" text="Confirmar" />
+   </children>
+</Pane>

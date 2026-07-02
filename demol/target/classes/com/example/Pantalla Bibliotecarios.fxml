@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" 
+minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" 
+xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.BibliotecariosController">
+   <children>
+      <Pane layoutX="19.0" layoutY="114.0" prefHeight="151.0" prefWidth="563.0" style="-fx-background-color: #ADD8E6;">
+         <children>
+            <Label layoutX="251.0" layoutY="5.0" text="Datos" />
+            <TextField fx:id="txtTelefono" layoutX="192.0" layoutY="99.0" />
+            <Label layoutX="242.0" layoutY="77.0" text="Telefono:" />
+            <Label layoutX="14.0" layoutY="77.0" text="Correo:" />
+            <TextField fx:id="txtCorreo" layoutY="99.0" />
+            <Label layoutX="451.0" layoutY="77.0" text="Área:" />
+            <TextField fx:id="txtArea" layoutX="390.0" layoutY="99.0" />
+         </children>
+      </Pane>
+      <Pane prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #3B82F6;">
+         <children>
+            <Label layoutX="31.0" layoutY="5.0" text="UTNG" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="btnRegistroUsuarios" layoutX="33.0" layoutY="75.0" mnemonicParsing="false" onAction="#irARegistroUsuarios" text="Registro Usuarios" />
+      <Button fx:id="btnRegistroBibliotecario" layoutX="164.0" layoutY="75.0" mnemonicParsing="false" style="-fx-background-color: #3B82F6;" text="Registro Bibliotecario" />
+      <Button fx:id="btnLista" layoutX="320.0" layoutY="75.0" mnemonicParsing="false" onAction="#irALista" text="Lista Usuarios y Bibliotecarios" />
+      <Label layoutX="21.0" layoutY="137.0" text="Nombre/s:" />
+      <TextField fx:id="txtNombre" layoutX="21.0" layoutY="161.0" />
+      <Label layoutX="236.0" layoutY="137.0" text="Apellido Paterno:" />
+      <Label layoutX="418.0" layoutY="137.0" text="Apellido Materno:" />
+      <TextField fx:id="txtApellidoP" layoutX="207.0" layoutY="161.0" />
+      <TextField fx:id="txtApellidoM" layoutX="409.0" layoutY="161.0" />
+      <Button fx:id="btnConfirmar" layoutX="266.0" layoutY="281.0" mnemonicParsing="false" onAction="#guardarBibliotecario" text="Confirmar" />
+   </children>
+</Pane>
